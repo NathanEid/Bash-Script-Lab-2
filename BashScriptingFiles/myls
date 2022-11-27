@@ -1,0 +1,31 @@
+<<Comment
+if [[ $# = 0 ]]; then
+    ls
+elif [[ $# = 1 ]]; then 
+    if [[ $* = "-l" ]]; then
+    ls -l
+    elif [[ $* = "-a" ]]; then
+    ls -a
+    elif [[ $* = "-d" ]]; then
+    ls -d 
+    elif [[ $* = "-i" ]]; then
+    ls -i
+    elif [[ $* = "-R" ]]; then
+    ls -R
+    else
+    ls $*
+    fi
+else
+    ls $*
+fi
+Comment
+
+<<Comment
+if [[ $# = 0 ]]; then
+    ls
+else
+    ls $*
+fi
+Comment
+
+ls $*

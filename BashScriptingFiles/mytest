@@ -1,0 +1,7 @@
+if [[ -d $1 ]]; then 
+    echo "$1 is Directory and his Permissions is:"
+    ls -ld $1
+else
+    echo "$1 is file and his Permissions is:"
+    ls -l $1
+fi

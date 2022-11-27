@@ -1,0 +1,6 @@
+read -p "Please Enter You Login Name:" lname
+
+ls -l /home/$lname
+cp -R /home/$lname /tmp/backup
+ps -u $lname
+
